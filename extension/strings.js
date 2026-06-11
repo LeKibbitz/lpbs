@@ -28,8 +28,11 @@ window.PBA_STRINGS = {
     listening: "Je t'écoute ! Pose ta question.",
     thinking: "Bonne question, laisse-moi réfléchir.",
     askNoMic: "Désolé, la reconnaissance vocale n'est pas disponible dans ce navigateur.",
-    askHeardNothing: "Je n'ai rien entendu. Appuie sur C pour réessayer.",
-    askFailed: "Désolé, je n'ai pas réussi à réfléchir. Vérifie la connexion ou la clé API, et réessaie."
+    askHeardNothing: "Je n'ai rien entendu. Appuie sur C et pose ta question juste après que je dis : je t'écoute.",
+    micDenied: "Le micro n'est pas autorisé pour ce site. Demande à un adulte de cliquer sur l'icône à gauche de l'adresse de la page, et d'autoriser le micro.",
+    micMissing: "Je ne trouve pas de micro sur cet ordinateur.",
+    micNetwork: "La reconnaissance vocale n'a pas répondu. Vérifie la connexion internet et réessaie.",
+    askFailed: "Désolé, je n'ai pas réussi à réfléchir. Vérifie la connexion, et réessaie."
   },
   en: {
     welcome: "Hello! I'm your audio guide for Petit Bridge.",
@@ -57,7 +60,10 @@ window.PBA_STRINGS = {
     listening: "I'm listening! Ask your question.",
     thinking: "Good question, let me think.",
     askNoMic: "Sorry, speech recognition is not available in this browser.",
-    askHeardNothing: "I didn't hear anything. Press C to try again.",
-    askFailed: "Sorry, I couldn't think that one through. Check the connection or the API key, and try again."
+    askHeardNothing: "I didn't hear anything. Press C and ask your question right after I say: I'm listening.",
+    micDenied: "The microphone is not allowed for this site. Ask an adult to click the icon left of the page address and allow the microphone.",
+    micMissing: "I can't find a microphone on this computer.",
+    micNetwork: "Speech recognition did not respond. Check the internet connection and try again.",
+    askFailed: "Sorry, I couldn't think that one through. Check the connection and try again."
   }
 };

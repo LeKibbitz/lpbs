@@ -709,13 +709,22 @@
       log('heard:', q);
       askClaude(q);
     };
+    rec.onaudiostart = () => log('mic open, listening');
     rec.onerror = e => {
       log('recognition error:', e.error);
       conversing = false;
-      speak([t.askHeardNothing]);
+      if (e.error === 'aborted') return;            // cancelled on purpose
+      const msg = (e.error === 'not-allowed' || e.error === 'service-not-allowed') ? t.micDenied
+        : e.error === 'audio-capture' ? t.micMissing
+        : e.error === 'network' ? t.micNetwork
+        : t.askHeardNothing;
+      speak([msg]);
     };
-    rec.onend = () => { if (!got) conversing = false; };
-    try { rec.start(); } catch (_) { conversing = false; speak([t.askNoMic]); }
+    rec.onend = () => {
+      if (!got) conversing = false;
+      if (!speaking && !speechQueue.length) duck(false);   // keep ducked if the guide is answering
+    };
+    try { duck(true); rec.start(); } catch (_) { conversing = false; duck(false); speak([t.askNoMic]); }
   }
 
   // ------------------------------------------------------------ keyboard

@@ -16,6 +16,14 @@ Jeux pris en charge nativement :
 Sur n'importe quel autre Genially public, l'extension lit le contenu des pages
 via l'API Genially (voix de synthèse, sans descriptions visuelles rédigées).
 
+## 🎧 README audio
+
+Ce mode d'emploi existe en version parlée (installation + touches), à écouter
+directement sur GitHub :
+
+- **Français** : [README-audio-fr.mp3](README-audio-fr.mp3)
+- **English**: [README-audio-en.mp3](README-audio-en.mp3)
+
 ## Installation (2 minutes)
 
 1. Télécharge ce dépôt : bouton vert **Code → Download ZIP**, puis dézippe

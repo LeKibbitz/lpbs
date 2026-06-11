@@ -1,5 +1,6 @@
 # Temp / scratch
 .tmp/
+.playwright-mcp/
 *.log
 
 # Secrets

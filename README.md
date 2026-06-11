@@ -30,6 +30,7 @@ L'extension en action, narration 100 % par la voix de l'extension :
 
 - **Épisode 1 — Luna et le grimoire des cartes** : https://youtu.be/HSDQajL4LvQ
 - **Épisode 2 — Mission BridgeBot** : https://youtu.be/aTakStKx5Rc
+- **Short (45 s)** : https://youtube.com/shorts/qOEL_vOOBz4
 
 ## Installation (2 minutes)
 

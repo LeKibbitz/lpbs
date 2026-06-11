@@ -20,7 +20,11 @@ AUDIO = ROOT / "extension/audio"
 AUDIO.mkdir(exist_ok=True)
 
 VOICES = {
-    "fr": "fr-FR-VivienneMultilingualNeural",
+    # Not a *Multilingual voice: those auto-detect the language per segment
+    # and read short French labels with an English accent.
+    "fr": "fr-FR-DeniseNeural",
+    # EN keeps a multilingual voice on purpose: the en| set still contains
+    # untranslated French texts that it must be able to read.
     "en": "en-US-AvaMultilingualNeural",
 }
 

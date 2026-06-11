@@ -51,6 +51,7 @@ window.PBA_GAMES = {
     "activity": {
      "type": "QUIZ_ACTIVITY",
      "question": "Combien y a-t-il de familles (couleurs) dans le jeu de cartes du Petit Bridge ?",
+     "blanks": "",
      "answers": [
       {
        "text": "1 famille",
@@ -89,6 +90,7 @@ window.PBA_GAMES = {
     "activity": {
      "type": "QUIZ_ACTIVITY",
      "question": "Quelle est la carte la plus forte dans une couleur ?",
+     "blanks": "",
      "answers": [
       {
        "text": "le 1",
@@ -127,6 +129,7 @@ window.PBA_GAMES = {
     "activity": {
      "type": "QUIZ_ACTIVITY",
      "question": "Qui est le partenaire de Luna, en Nord ?",
+     "blanks": "",
      "answers": [
       {
        "text": "Sud",
@@ -159,6 +162,7 @@ window.PBA_GAMES = {
     "activity": {
      "type": "FILL_IN_THE_BLANKS_ACTIVITY",
      "question": "Remplissez les blancs avec les bonnes réponses.",
+     "blanks": "Luna a presque terminé les épreuves de la forêt des Premiers Pas. Elle sait maintenant qu'au Petit Bridge, il y a ___ cartes en tout. L'ensemble des cartes est distribué une par une aux 4 joueurs. Chaque joueur reçoit ___ cartes. Le Petit Bridge est un jeu d' ___ . On ne joue pas seul : on joue avec un ___ . Autour du tapis de jeu, les joueurs sont placés au Nord, au Sud, à l'Ouest et à l' ___ . Le partenaire de Est est placé en ___ .",
      "answers": [
       {
        "text": "partenaire",
@@ -243,6 +247,7 @@ window.PBA_GAMES = {
     "activity": {
      "type": "QUIZ_ACTIVITY",
      "question": "À ton avis, qui a gagné la levée ?",
+     "blanks": "",
      "answers": [
       {
        "text": "Est",
@@ -292,6 +297,7 @@ window.PBA_GAMES = {
     "activity": {
      "type": "FILL_IN_THE_BLANKS_ACTIVITY",
      "question": "Remplissez les blancs avec les bonnes réponses.",
+     "blanks": "Luna a réussi toutes les épreuves de la Grotte des Jeux Secrets. Elle a découvert qu'au Petit Bridge, quand tous les joueurs posent une ___ , cela s'appelle une ___ . On est obligé de jouer la couleur demandée par la première carte posée. C'est la carte la plus ___ dans la couleur demandée qui gagne la levée. Si Luna n'a pas la ___ demandée, elle se ___ d'une autre carte. Le joueur qui a gagné la levée, ___ .",
      "answers": [
       {
        "text": "rejoue.",
@@ -398,6 +404,7 @@ window.PBA_GAMES = {
     "activity": {
      "type": "FILL_IN_THE_BLANKS_ACTIVITY",
      "question": "Remplissez les blancs avec les bonnes réponses.",
+     "blanks": "Luna a presque fini toutes les épreuves de la Salles des Duos Magiques. Elle a découvert qu'il est important de jouer en ___ . Elle doit être attentive aux cartes jouées par son ___ . Si mon partenaire gagne la levée, la meilleure tactique n'est pas toujours de jouer ma plus ___ carte. Je peux poser une carte plus faible et jouer sans ___ . Il est important de bien regarder et compter les cartes jouées, car parfois, il n'est pas judicieux de garder ses grosses cartes pour la ___ : on risque de les ___ !",
      "answers": [
       {
        "text": "partenaire",
@@ -481,6 +488,7 @@ window.PBA_GAMES = {
     "activity": {
      "type": "IMAGE_ACTIVITY",
      "question": "Nord est endormi. Comment jouerais-tu à la place d'Est ?",
+     "blanks": "",
      "answers": [
       {
        "text": "",
@@ -519,6 +527,7 @@ window.PBA_GAMES = {
     "activity": {
      "type": "FILL_IN_THE_BLANKS_ACTIVITY",
      "question": "Remplissez les blancs avec les bonnes réponses.",
+     "blanks": "Luna arrive au terme de ses aventures. Elle doit réaliser l'épreuve finale de la Bibliothèque des Dernières Leçons. Dès que la carte d' ___ est posée sur la table, le joueur qui est à la ___ de l'entameur devient l' ___ et étale ses cartes face ___ sur la table. C'est son partenaire qui ___ les cartes à jouer pour l'endormi.",
      "answers": [
       {
        "text": "endormi",
@@ -707,6 +716,7 @@ window.PBA_GAMES = {
     "activity": {
      "type": "QUIZ_ACTIVITY",
      "question": "Combien y a-t-il de couleurs dans le jeu de cartes du Mini Bridge ?",
+     "blanks": "",
      "answers": [
       {
        "text": "4 couleurs",
@@ -745,6 +755,7 @@ window.PBA_GAMES = {
     "activity": {
      "type": "QUIZ_ACTIVITY",
      "question": "Quelle est la carte la plus forte dans une couleur ?",
+     "blanks": "",
      "answers": [
       {
        "text": "l'As",
@@ -783,6 +794,7 @@ window.PBA_GAMES = {
     "activity": {
      "type": "QUIZ_ACTIVITY",
      "question": "Qui est le partenaire de Nord ?",
+     "blanks": "",
      "answers": [
       {
        "text": "Est",
@@ -815,6 +827,7 @@ window.PBA_GAMES = {
     "activity": {
      "type": "FILL_IN_THE_BLANKS_ACTIVITY",
      "question": "Remplissez les blancs avec les bonnes réponses.",
+     "blanks": "Vous a presque terminé de restaurer le Module Fondation. Vous savez maintenant qu'au Mini Bridge, il y a ___ cartes en tout. L'ensemble des cartes est distribué une par une aux 4 joueurs. Chaque joueur reçoit ___ cartes. Le Mini Bridge est un jeu d' ___ . On ne joue pas seul : on joue avec un ___ . Autour du tapis de jeu, les joueurs sont placés au Nord, au Sud, à l'Ouest et à l' ___ . Le partenaire de Est est placé en ___ .",
      "answers": [
       {
        "text": "Est",
@@ -899,6 +912,7 @@ window.PBA_GAMES = {
     "activity": {
      "type": "QUIZ_ACTIVITY",
      "question": "À votre avis, qui a gagné la levée ?",
+     "blanks": "",
      "answers": [
       {
        "text": "Est",
@@ -947,6 +961,7 @@ window.PBA_GAMES = {
     "activity": {
      "type": "FILL_IN_THE_BLANKS_ACTIVITY",
      "question": "Remplissez les blancs avec les bonnes réponses.",
+     "blanks": "Vous avez réussi toutes les épreuves du protocole Plis et Levées. Vous avez découvert qu'au Mini Bridge, quand tous les joueurs posent une ___ , cela s'appelle une ___ . On est obligé de jouer la couleur demandée par la première carte posée. C'est la carte la plus ___ dans la couleur demandée qui gagne la levée. Si vous n'avez pas la ___ demandée, vous vous ___ d'une autre carte. Le joueur qui a gagné la levée, ___ .",
      "answers": [
       {
        "text": "défaussez",
@@ -1055,6 +1070,7 @@ window.PBA_GAMES = {
     "activity": {
      "type": "FILL_IN_THE_BLANKS_ACTIVITY",
      "question": "Remplissez les blancs avec les bonnes réponses.",
+     "blanks": "Vous avez presque fini les épreuves de la Salles des stratégies. Vous avez découvert qu'il est important de jouer en ___ . Vous devez être attentifs aux cartes jouées par votre ___ . Si celui-ci gagne la levée, la meilleure tactique n'est pas toujours de jouer votre plus ___ carte. Vous pouvez poser une carte plus faible et jouer sans ___ . Il est important de bien regarder et compter les cartes jouées, car parfois, il n'est pas judicieux de garder vos grosses cartes pour la ___ : on risque de les ___ !",
      "answers": [
       {
        "text": "équipe",
@@ -1141,6 +1157,7 @@ window.PBA_GAMES = {
     "activity": {
      "type": "IMAGE_ACTIVITY",
      "question": "Nord est endormi. Comment joueriez-vous à la place d'Est ?",
+     "blanks": "",
      "answers": [
       {
        "text": "",
@@ -1179,6 +1196,7 @@ window.PBA_GAMES = {
     "activity": {
      "type": "FILL_IN_THE_BLANKS_ACTIVITY",
      "question": "Remplissez les blancs avec les bonnes réponses.",
+     "blanks": "Vous arrivez presque au terme de vos aventures dans la Salle du pilote central. Dès que la carte d' ___ est posée sur la table, le joueur qui est à la ___ de l'entameur devient l' ___ (on dit aussi le Mort) et étale ses cartes face ___ sur la table. C'est son partenaire qui ___ les cartes à jouer pour l'endormi.",
      "answers": [
       {
        "text": "gauche",
@@ -1251,6 +1269,7 @@ window.PBA_GAMES = {
     "activity": {
      "type": "QUIZ_ACTIVITY",
      "question": "Détermine le nombre de points d'honneur de cette main.",
+     "blanks": "",
      "answers": [
       {
        "text": "15 points",
@@ -1295,6 +1314,7 @@ window.PBA_GAMES = {
     "activity": {
      "type": "QUIZ_ACTIVITY",
      "question": "Comptez les points de chaque joueur et déterminez l’équipe qui a le plus de points.",
+     "blanks": "",
      "answers": [
       {
        "text": "Équipe Est-Ouest",
@@ -1324,6 +1344,7 @@ window.PBA_GAMES = {
     "activity": {
      "type": "QUIZ_ACTIVITY",
      "question": "L'équipe majoritaire en point, va s'engager sur un contrat. Lequel ?",
+     "blanks": "",
      "answers": [
       {
        "text": "20 à 22 points - 7 levées",
@@ -1373,6 +1394,7 @@ window.PBA_GAMES = {
     "activity": {
      "type": "FILL_IN_THE_BLANKS_ACTIVITY",
      "question": "Remplissez les blancs avec les bonnes réponses.",
+     "blanks": "Vous êtes en Sud. Votre main ci-dessus a une valeur de ___ points d'honneur. Son partenaire Nord lui annonce qu'il a 5 points. L'équipe a donc au total ___ points d'honneur. L'équipe Est-Ouest a donc ___ points d'honneur. L'équipe Nord-Sud est majoritaire et annonce un contrat de ___ levées. Sud est appelé ___ , Ouest est ___ et Nord est le mort.",
      "answers": [
       {
        "text": "l'entameur",

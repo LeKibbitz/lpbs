@@ -9,6 +9,8 @@ window.PBA_STRINGS = {
     question: "Question :",
     options: "Voici les réponses possibles.",
     words: "Voici les mots à placer.",
+    blanksIntro: "Le texte à compléter :",
+    blankWord: "trou",
     items: n => n > 1
       ? `Il y a ${n} boutons sur cette page. Appuie sur L pour la liste, ou sur un chiffre pour choisir.`
       : "Il y a un bouton sur cette page. Appuie sur 1 pour l'activer.",
@@ -42,6 +44,8 @@ window.PBA_STRINGS = {
     question: "Question:",
     options: "Here are the possible answers.",
     words: "Here are the words to place.",
+    blanksIntro: "The text to complete:",
+    blankWord: "blank",
     items: n => n > 1
       ? `There are ${n} buttons on this page. Press L for the list, or a number key to choose.`
       : "There is one button on this page. Press 1 to use it.",

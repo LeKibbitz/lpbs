@@ -61,6 +61,8 @@ for (const game of GAMES) {
   }
   add('fr', 'Vérification');
   add('en', 'Verification');
+  add('fr', 'Envoyer');     // Genially's blanks submit button ("Send")
+  add('en', 'Send');
 
   for (const sl of (G ? G.slides : [])) {
     for (const txt of sl.texts || []) { add('fr', txt); add('en', toEn(txt)); }
@@ -78,6 +80,10 @@ for (const game of GAMES) {
         add('en', `${S.en.question} ${toEn(a.question)}`);
       }
       for (const ans of a.answers || []) { add('fr', ans.text); add('en', toEn(ans.text)); }
+      if (a.blanks) {
+        add('fr', a.blanks.replace(/___/g, 'trou'));
+        add('en', a.blanks.replace(/___/g, 'blank'));
+      }
       for (const f of [a.feedbackOk, a.feedbackKo]) {
         if (f) { add('fr', f); add('en', toEn(f)); }
       }

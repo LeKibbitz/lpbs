@@ -31,13 +31,28 @@ VOICES = {
 
 # What the voice should actually pronounce, when the raw text misleads the
 # voice. Map keys stay the raw text (content.js looks them up).
-NUM_FR = {"1": "un", "2": "deux", "3": "trois", "4": "quatre", "5": "cinq",
-          "6": "six", "7": "sept", "8": "huit", "9": "neuf"}
+# Trailing punctuation gives the voice a full prosodic phrase: "un" alone is
+# clipped, "Un." is not.
+NUM_FR = {"1": "Un.", "2": "Deux.", "3": "Trois.", "4": "Quatre.", "5": "Cinq.",
+          "6": "Six.", "7": "Sept.", "8": "Huit.", "9": "Neuf."}
+
+# Words the French voice misreads: "Est" (cardinal point, /est/) is read as
+# the verb "est" (/è/).
+FR_OVERRIDES = {
+    "Est": "Esst.",
+    "Sud": "Sud.",
+    "Nord": "Nord.",
+    "Ouest": "Ouest.",
+}
 
 
 def spoken(lang, text):
     if lang == "fr" and text in NUM_FR:
         return NUM_FR[text]
+    if lang == "fr" and text in FR_OVERRIDES:
+        return FR_OVERRIDES[text]
+    # "Est" inside longer sentences: "partenaire de Nord ? Est" etc. are full
+    # phrases where the voice gets it right; only the bare word is overridden.
     # ALL-CAPS labels (DÉMARRER, START...) get spelled out or mangled by the
     # voice; speak them in sentence case instead.
     if len(text) >= 3 and text.isupper():

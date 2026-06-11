@@ -332,9 +332,13 @@
     }
     const actsBySlide = {};
     for (const a of data.Activities || []) {
+      const blanks = a.Type === 'FILL_IN_THE_BLANKS_ACTIVITY' && a.Text
+        ? stripHtml(a.Text.replace(/<blank-react-node[^>]*>(<\/blank-react-node>)?/g, ' ___ '))
+        : '';
       actsBySlide[a.IdSlide] = {
         type: a.Type,
         question: stripHtml(a.Question),
+        blanks,
         answers: (a.Answers || []).map(x => ({
           text: stripHtml(x.Text || ''), correct: !!x.IsCorrect
         })),
@@ -396,10 +400,13 @@
       if (txt && txt.length < 40) add(el, 'word', translate(txt));
     });
 
-    // 3. real buttons (Envoyer / submit)
+    // 3. real buttons (Envoyer / submit). Genially labels the blanks submit
+    // button "Send" even in French games.
     slideEl.querySelectorAll('button').forEach(el => {
       const txt = cleanText(el);
-      if (txt) add(el, 'submit', translate(txt));
+      if (!txt) return;
+      const label = /^send$/i.test(txt) && settings.lang === 'fr' ? 'Envoyer' : translate(txt);
+      add(el, 'submit', label);
     });
 
     // 4. Genially clickables (cursor pointer, uuid ids), including the
@@ -505,6 +512,11 @@
 
     if (activity && activity.question) {
       segs.push(`${t.question} ${translate(activity.question)}`);
+    }
+    // Fill-in-the-blanks: read the gap sentence (___ tokens become "trou").
+    if (activity && activity.blanks) {
+      segs.push(PAUSE, t.blanksIntro,
+        activity.blanks.replace(/___/g, t.blankWord).replace(/\s+/g, ' '));
     }
 
     const answers = interactives.filter(i => i.kind === 'answer');

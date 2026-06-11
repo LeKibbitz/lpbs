@@ -44,9 +44,18 @@ def build(genially_id, src):
     activities = {}
     for a in data["Activities"]:
         opts = a.get("Options") or {}
+        # Fill-in-the-blanks: the gap sentence lives in Text with
+        # <blank-react-node> markers; keep gaps as a ___ token that the
+        # extension replaces with a spoken word ("trou" / "blank").
+        blanks = ""
+        if a["Type"] == "FILL_IN_THE_BLANKS_ACTIVITY" and a.get("Text"):
+            raw = re.sub(r"<blank-react-node[^>]*></blank-react-node>", " ___ ", a["Text"])
+            raw = re.sub(r"<blank-react-node[^>]*/>", " ___ ", raw)
+            blanks = strip_html(raw)
         activities[a["IdSlide"]] = {
             "type": a["Type"],
             "question": strip_html(a["Question"]),
+            "blanks": blanks,
             "answers": [
                 {
                     "text": strip_html(x.get("Text", "")),

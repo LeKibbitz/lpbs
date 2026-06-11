@@ -262,3 +262,72 @@ window.PBA_DESCRIPTIONS = {
     }
   }
 };
+
+// ---------------------------------------------------------------------------
+// Audiodescription layer ("décor" option / D key): rich visual descriptions
+// of each page's scenery, shared per chapter and merged as fr/en `detail`.
+(function () {
+  const S = window.PBA_DESCRIPTIONS["697f6a08ef130744478db916"].slides;
+
+  const SCENES = {
+    castle: {
+      fr: "Le décor : l'école de magie, un grand château doré aux toits pointus bleus, accroché à la montagne entre deux cascades. Devant l'entrée, une fontaine de pierre fait flotter une grosse bulle de cristal lumineuse. Des lanternes dorées éclairent un parvis de pierres, des fleurs violettes, et un grimoire ouvert posé sur un pupitre en bois.",
+      en: "The scenery: the school of magic, a tall golden castle with pointed blue roofs, perched on the mountain between two waterfalls. By the entrance, a stone fountain holds a big glowing crystal bubble. Golden lanterns light a stone courtyard, purple flowers, and an open grimoire resting on a wooden stand."
+    },
+    children: {
+      fr: "Quatre enfants magiciens s'avancent avec un chat noir : un garçon à la cape verte qui tient une tasse et une carte, Luna avec sa grande cape et son chapeau violets, sa baguette levée, un garçon à la cape bleue qui lève le poing, et une fille à la cape rouge qui porte un grand livre brillant.",
+      en: "Four young wizards walk along with a black cat: a boy in a green cape holding a cup and a card, Luna in her big purple cape and hat, wand raised, a boy in a blue cape lifting his fist, and a girl in a red cape carrying a big glowing book."
+    },
+    forest: {
+      fr: "Le décor : la Forêt des Premiers Pas, une forêt enchantée baignée d'une lumière verte et dorée. Un chemin de planches de bois passe entre des arbres géants couverts de mousse et mène à une arche de pierre qui brille au loin. Des lucioles dorées dansent dans l'herbe, et de gros champignons violets et rouges poussent au bord du chemin.",
+      en: "The scenery: the Forest of First Steps, an enchanted forest bathed in green and golden light. A path of wooden planks winds between giant moss-covered trees toward a stone arch glowing in the distance. Golden fireflies dance in the grass, and big purple and red mushrooms grow along the path."
+    },
+    cave: {
+      fr: "Le décor : la Grotte des Jeux Secrets, éclairée par des cristaux géants violets, roses et bleus accrochés au plafond et aux rochers. Un chemin de pierre longe une petite rivière souterraine et monte vers un autel couvert d'un tissu vert, avec des bougies allumées et des pièces d'or éparpillées. Des champignons roses brillent doucement dans la pénombre.",
+      en: "The scenery: the Cave of Secret Games, lit by giant purple, pink and blue crystals hanging from the ceiling and growing on the rocks. A stone path follows a small underground river up to an altar draped in green cloth, with lit candles and gold coins scattered around. Pink mushrooms glow softly in the dark."
+    },
+    salon: {
+      fr: "Le décor : la Salle des Duos Magiques, un salon chaleureux éclairé par un lustre doré. Au centre, une table ronde au tapis vert, entourée de quatre fauteuils de velours. Une boule de cristal bleue flotte au-dessus de la table en scintillant. Tout autour, des bibliothèques pleines de livres, des cristaux lumineux, et un grand cercle magique bleu qui brille sur le sol.",
+      en: "The scenery: the Room of Magic Duos, a cosy parlour lit by a golden chandelier. In the middle, a round table with a green felt top, surrounded by four velvet armchairs. A blue crystal ball floats above the table, sparkling. All around, bookshelves full of books, glowing crystals, and a big blue magic circle shining on the floor."
+    },
+    library: {
+      fr: "Le décor : la Bibliothèque des Dernières Leçons, une salle immense aux murs couverts de milliers de livres sur deux étages. Un grand escalier monte vers un vitrail plein de lumière. Au centre, sur une table ronde, un énorme grimoire ouvert rayonne d'une lumière dorée, entouré de chandelles et de fauteuils de cuir.",
+      en: "The scenery: the Library of Final Lessons, a huge hall whose walls are covered with thousands of books on two floors. A grand staircase climbs toward a stained-glass window full of light. In the middle, on a round table, an enormous open grimoire glows with golden light, surrounded by candles and leather armchairs."
+    },
+    kit: {
+      fr: "Sur la page, le matériel du petit magicien : un balai de bois, un chapeau pointu violet couvert d'étoiles, un chaudron noir où bouillonne une potion bleue, des bougies, un éventail de cartes, et quatre fioles de potion : une verte, une dorée, une rouge, et une bleue surmontée d'un cristal violet.",
+      en: "On the page, the little wizard's kit: a wooden broom, a pointed purple hat covered in stars, a black cauldron where a blue potion bubbles, candles, a fan of cards, and four potion flasks: a green one, a golden one, a red one, and a blue one topped with a purple crystal."
+    },
+    parchment: {
+      fr: "Le décor : un grand parchemin déroulé, aux bords enroulés sur des baguettes de bois, posé par-dessus la page du jeu.",
+      en: "The scenery: a large unrolled parchment, its edges curled around wooden rods, laid over the game page."
+    }
+  };
+
+  const IDS = {"1":"25be3f38-4674-42cb-9655-b9f3a6fb3cea","2":"75f3916a-294d-4169-8f49-e58c0507c8bd","3":"2fe009a2-dc3e-41d3-9e23-4413934cfdb4","4":"75b307ab-cec5-4c6a-ac2f-397a5b9c22ab","5":"551f03f3-bd02-4386-a734-26c2fc9fea5e","6":"412011e6-82c8-4ec9-93bf-a955dc92d170","7":"13eed9f3-c1c2-4e60-a09f-801f26b88141","8":"7ba0dff2-a163-4d1e-be21-f14708169bad","9":"c78e738d-13ea-4403-b39f-b5aa21e14891","10":"22c81fcd-2d61-4730-a7c2-25ec0b84953a","11":"5968dea4-b0a6-4f89-80fb-c5b0faa48f3b","12":"79a07f39-4f31-4642-bdff-5d22879978b3","13":"39e0481f-2b3a-484a-b70a-b7116203e68a","14":"fb64b39c-e682-49e0-b54c-3d6dedfc3489","15":"b2c34569-5e6d-4e01-89ea-b6bb11a61749","16":"7ff1c552-96fe-4167-a102-1094b6c9b971","17":"d287bcb6-1727-49a3-aded-b2ec30e8e7f4","18":"691201ac-7bc1-48de-9c26-e21d65a60c6c","19":"6f08499d-7e99-43d5-bccc-3d196fd56353","20":"da5cbf73-37db-4a0d-a13b-634d7c05c95a","21":"f3557583-fb65-4d32-8894-a9569affd408","22":"12dfc389-cdad-4df8-ae08-089c67f77b00","23":"30613d8b-9fb3-48af-b18b-448e79f97df6","24":"9f7caa94-e14b-4d42-a5b8-a3dc9e5916e8","25":"0c33ceb9-bde4-435e-8df2-b19f61a4670f","26":"49b9a96c-b21b-4eac-ab36-a0c339336146","27":"1a943fe1-d2cc-4eab-952d-7f9de781cb39","28":"88761768-1922-4696-bde4-2cbd461f53f9","29":"273005c0-457f-40dd-b1a0-13b64ccc4793","30":"28f5ed17-70d2-4029-b796-0f93a979520c","31":"4ae95e6b-283e-4783-97bb-5249aa12242e","32":"58e3a383-70dc-491a-a840-0f77dacf96ec","33":"d3d0d916-eb44-4b1c-827c-e2b2af58e483","34":"f9cedbec-bc0d-45ed-871a-ac5d853e2fdf"};
+
+  // order -> scenes composing the page's audiodescription
+  const PLAN = {
+    1: ['castle', 'children'], 2: ['castle'],
+    3: ['forest'], 4: ['forest'], 5: ['forest'], 6: ['forest'], 7: ['forest'],
+    8: ['forest', 'kit'],
+    9: ['cave'], 10: ['cave'], 11: ['cave'], 12: ['cave'], 13: ['cave'],
+    14: ['cave', 'kit'],
+    15: ['salon'], 16: ['salon'], 17: ['salon'], 18: ['salon'], 19: ['salon'],
+    20: ['salon', 'kit'],
+    21: ['library'], 22: ['library'], 23: ['library'], 24: ['library'], 25: ['library'],
+    26: ['library', 'kit'],
+    27: ['castle', 'children'], 28: ['castle'],
+    29: ['parchment'], 30: ['parchment'], 31: ['parchment'],
+    32: ['parchment'], 33: ['parchment'], 34: ['parchment']
+  };
+
+  for (const [order, scenes] of Object.entries(PLAN)) {
+    const slide = S[IDS[order]];
+    if (!slide) continue;
+    slide.fr = slide.fr || {};
+    slide.en = slide.en || {};
+    slide.fr.detail = scenes.map(k => SCENES[k].fr).join(' ');
+    slide.en.detail = scenes.map(k => SCENES[k].en).join(' ');
+  }
+})();

@@ -1,15 +1,17 @@
-const DEFAULTS = { enabled: true, lang: 'fr', rate: 1.0 };
+const DEFAULTS = { enabled: true, lang: 'fr', rate: 1.0, verbose: false };
 let settings = { ...DEFAULTS };
 
 const toggleBtn = document.getElementById('toggle');
 const langSel = document.getElementById('lang');
 const rateInput = document.getElementById('rate');
+const verboseInput = document.getElementById('verbose');
 
 function render() {
   toggleBtn.textContent = settings.enabled ? 'Voix activée — cliquer pour couper' : 'Voix coupée — cliquer pour activer';
   toggleBtn.classList.toggle('off', !settings.enabled);
   langSel.value = settings.lang;
   rateInput.value = settings.rate;
+  verboseInput.checked = !!settings.verbose;
 }
 
 function save() {
@@ -28,6 +30,11 @@ toggleBtn.addEventListener('click', () => {
 
 langSel.addEventListener('change', () => {
   settings.lang = langSel.value;
+  save();
+});
+
+verboseInput.addEventListener('change', () => {
+  settings.verbose = verboseInput.checked;
   save();
 });
 

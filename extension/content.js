@@ -24,7 +24,7 @@
   const UI = window.PBA_STRINGS;
   const AUDIO_MAP = window.PBA_AUDIO || {};
 
-  const settings = { enabled: true, lang: 'fr', rate: 1.0 };
+  const settings = { enabled: true, lang: 'fr', rate: 1.0, verbose: false };
   let model = BUNDLED;          // {title, total, slides:[{id, order, name, popup, texts, activity}]}
   let slidesById = {};
   let currentSlideId = null;
@@ -548,6 +548,10 @@
       }
     }
 
+    // Audiodescription option: rich scenery description (also on key D).
+    const detail = curated && curated[settings.lang] && curated[settings.lang].detail;
+    if (settings.verbose && detail) segs.push(PAUSE, detail);
+
     const q = describeQuestion(slideEl);
     if (q.length) segs.push(PAUSE, ...q);
 
@@ -785,6 +789,12 @@
       case 'r': {
         const el = getCurrentSlideEl();
         if (el) announceSlide(el, { repeat: true });
+        break;
+      }
+      case 'd': {
+        const curated = curatedSlide(currentSlideId);
+        const detail = curated && curated[settings.lang] && curated[settings.lang].detail;
+        speak([detail || t.noDetail]);
         break;
       }
       case 'q': {

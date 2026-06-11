@@ -4,7 +4,7 @@
 window.PBA_STRINGS = {
   fr: {
     welcome: "Bonjour ! Je suis ton guide audio pour le Petit Bridge.",
-    help: "Voici comment on joue ensemble. Touche R : je répète la description de la page. Touche Q : je relis la question et les réponses. Touches 1 à 9 : tu choisis une réponse ou tu actives un bouton. Touche L : je te liste tous les boutons de la page. Touche V : tu valides l'exercice. Touche C : tu me poses une question à voix haute, et je te réponds. Touche S ou Échap : je me tais. Touche T : on passe en anglais, ou on revient en français. Et les touches plus et moins changent la vitesse de ma voix.",
+    help: "Voici comment on joue ensemble. Touche R : je répète la description de la page. Touche Q : je relis la question et les réponses. Touches 1 à 9 : tu choisis une réponse ou tu actives un bouton. Touche L : je te liste tous les boutons de la page. Touche V : tu valides l'exercice. Touche D : je décris le décor de la page. Touche C : tu me poses une question à voix haute, et je te réponds. Touche S ou Échap : je me tais. Touche T : on passe en anglais, ou on revient en français. Et les touches plus et moins changent la vitesse de ma voix.",
     page: (o, t) => `Page ${o} sur ${t}.`,
     question: "Question :",
     options: "Voici les réponses possibles.",
@@ -32,11 +32,12 @@ window.PBA_STRINGS = {
     micDenied: "Le micro n'est pas autorisé pour ce site. Demande à un adulte de cliquer sur l'icône à gauche de l'adresse de la page, et d'autoriser le micro.",
     micMissing: "Je ne trouve pas de micro sur cet ordinateur.",
     micNetwork: "La reconnaissance vocale n'a pas répondu. Vérifie la connexion internet et réessaie.",
+    noDetail: "Je n'ai pas de description du décor pour cette page.",
     askFailed: "Désolé, je n'ai pas réussi à réfléchir. Vérifie la connexion, et réessaie."
   },
   en: {
     welcome: "Hello! I'm your audio guide for Petit Bridge.",
-    help: "Here is how we play together. Key R: I repeat the page description. Key Q: I read the question and the answers again. Keys 1 to 9: you pick an answer or press a button. Key L: I list all the buttons on the page. Key V: you submit the exercise. Key C: you ask me a question out loud, and I answer. Key S or Escape: I stay quiet. Key T: we switch to French, or back to English. And the plus and minus keys change how fast I speak.",
+    help: "Here is how we play together. Key R: I repeat the page description. Key Q: I read the question and the answers again. Keys 1 to 9: you pick an answer or press a button. Key L: I list all the buttons on the page. Key V: you submit the exercise. Key D: I describe the page scenery. Key C: you ask me a question out loud, and I answer. Key S or Escape: I stay quiet. Key T: we switch to French, or back to English. And the plus and minus keys change how fast I speak.",
     page: (o, t) => `Page ${o} of ${t}.`,
     question: "Question:",
     options: "Here are the possible answers.",
@@ -64,6 +65,7 @@ window.PBA_STRINGS = {
     micDenied: "The microphone is not allowed for this site. Ask an adult to click the icon left of the page address and allow the microphone.",
     micMissing: "I can't find a microphone on this computer.",
     micNetwork: "Speech recognition did not respond. Check the internet connection and try again.",
+    noDetail: "I have no scenery description for this page.",
     askFailed: "Sorry, I couldn't think that one through. Check the connection and try again."
   }
 };

@@ -60,7 +60,9 @@ for (const sl of G.slides) {
   const cur = (D.slides || {})[sl.id];
   if (cur) {
     if (cur.fr && cur.fr.pre) add('fr', cur.fr.pre);
+    if (cur.fr && cur.fr.detail) add('fr', cur.fr.detail);
     if (cur.en && cur.en.full) add('en', cur.en.full);
+    if (cur.en && cur.en.detail) add('en', cur.en.detail);
   }
   const a = sl.activity;
   if (a) {

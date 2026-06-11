@@ -4,7 +4,7 @@
 window.PBA_STRINGS = {
   fr: {
     welcome: "Bonjour ! Je suis ton guide audio.",
-    help: "Voici comment on joue ensemble. Touche R : je répète la description de la page. Touche Q : je relis la question et les réponses. Touches 1 à 9 : tu choisis une réponse ou tu actives un bouton. Touche L : je te liste tous les boutons de la page. Touche V : tu valides l'exercice. Touche D : je décris le décor de la page. Touche C : tu me poses une question à voix haute, et je te réponds. Touche S ou Échap : je me tais. Touche T : on passe en anglais, ou on revient en français. Et les touches plus et moins changent la vitesse de ma voix.",
+    help: "Voici comment on joue ensemble. À chaque page, je lis ce qui est affiché, puis je t'annonce le nombre de boutons. Touche L : je liste les boutons avec leur numéro. Touches 1 à 9 : tu actives le bouton ou la réponse de ce numéro. Touche R : je répète la page. Touche Q : je relis la question et les réponses. Touche V : tu valides l'exercice. Touche D : je décris le décor. Touche C : tu me poses une question avec ta voix, et je te réponds. Touche S ou Échap : je me tais. Touche T : on passe en anglais, ou on revient en français. Touches plus et moins : je parle plus vite ou plus lentement.",
     page: (o, t) => `Page ${o} sur ${t}.`,
     question: "Question :",
     options: "Voici les réponses possibles.",
@@ -37,7 +37,7 @@ window.PBA_STRINGS = {
   },
   en: {
     welcome: "Hello! I'm your audio guide.",
-    help: "Here is how we play together. Key R: I repeat the page description. Key Q: I read the question and the answers again. Keys 1 to 9: you pick an answer or press a button. Key L: I list all the buttons on the page. Key V: you submit the exercise. Key D: I describe the page scenery. Key C: you ask me a question out loud, and I answer. Key S or Escape: I stay quiet. Key T: we switch to French, or back to English. And the plus and minus keys change how fast I speak.",
+    help: "Here is how we play together. On each page I read what is displayed, then I tell you how many buttons there are. Key L: I list the buttons with their numbers. Keys 1 to 9: you press the button or answer with that number. Key R: I repeat the page. Key Q: I read the question and the answers again. Key V: you submit the exercise. Key D: I describe the scenery. Key C: you ask me a question with your voice, and I answer. Key S or Escape: I stay quiet. Key T: we switch to French, or back to English. Plus and minus keys: I speak faster or slower.",
     page: (o, t) => `Page ${o} of ${t}.`,
     question: "Question:",
     options: "Here are the possible answers.",

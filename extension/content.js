@@ -535,10 +535,19 @@
       if (slide && slide.texts.length) {
         // Skip duplicated question text; activity is read by describeQuestion.
         const qa = slide.activity ? slide.activity.question : null;
+        // Skip short texts already covered by the game title or the curated
+        // preamble (e.g. the title repeated as decorative text on the page).
+        const titleStr = CURATED && CURATED.title
+          ? (CURATED.title[settings.lang] || CURATED.title.fr) : '';
+        const already = (titleStr + ' ' + segs.filter(x => x !== PAUSE).join(' '))
+          .replace(/\s+/g, ' ').toLowerCase();
         segs.push(PAUSE);
         for (const txt of slide.texts) {
           if (qa && txt === qa) continue;
-          segs.push(settings.lang === 'en' ? translate(txt) : txt);
+          const spoken = settings.lang === 'en' ? translate(txt) : txt;
+          const n = spoken.replace(/\s+/g, ' ').trim().toLowerCase();
+          if (n.length < 80 && already.includes(n)) continue;
+          segs.push(spoken);
         }
       }
       if (!slide) {

@@ -387,8 +387,8 @@ window.PBA_DESCRIPTIONS["6999b0b9d1e83ea5a328b462"] = (function () {
   };
 
   def("25be3f38-4674-42cb-9655-b9f3a6fb3cea", 'control',
-    "Page de couverture. Mission BridgeBot : le protocole Mini Bridge.",
-    "Cover page. BridgeBot Mission: the Mini Bridge protocol. Press 1 to start the game.");
+    "Page de couverture.",
+    "Cover page. Press 1 to start the game.");
   def("75f3916a-294d-4169-8f49-e58c0507c8bd", 'bridge',
     "L'écran de briefing de ta mission.",
     "Your mission briefing. In the near future, humans entrusted strategy games to a central artificial intelligence: BridgeBot. But evil robots infiltrated its system, took control and corrupted it. Now it applies the rules without understanding them and disrupts every game. That is where you come in. You are recruited as reprogramming agents. Your mission: restore the essential Mini Bridge protocols, neutralise the corrupted robots and give BridgeBot back its ability to think and play as a team. Will you take back control of the system before it is too late? Press 1 to continue.");
@@ -566,7 +566,320 @@ window.PBA_DESCRIPTIONS["6999b0b9d1e83ea5a328b462"] = (function () {
       en: "BridgeBot Mission: the Mini Bridge protocol."
     },
     slides: slides,
-    labels: {},
+    labels: {
+  "64e65052-9dac-4b70-bcdd-e9b68f7998c2": {
+    "fr": "Continuer, page suivante",
+    "en": "Continue to the next page"
+  },
+  "53bd5a65-c434-489d-bbe2-5b065394f195": {
+    "fr": "Continuer, page suivante",
+    "en": "Continue to the next page"
+  },
+  "5cc2f4f1-995b-42f1-ad0b-4070e330db53": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "e62bb70a-279f-4b4c-af0a-cad7c8414815": {
+    "fr": "Continuer, page suivante",
+    "en": "Continue to the next page"
+  },
+  "45f49400-059d-40a5-a9d3-d6f1803beb55": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "c38f7b01-21f8-4022-8bc5-653e530f2e82": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "fa284565-db0d-47da-b152-a98b2f39621d": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "ad2e6211-a90c-4f09-9858-65d0d3ce652f": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "956c2f40-491b-4827-8bcb-e94128760c0f": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "0caa03a4-3450-4870-8dc1-e191e2f58780": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "3b450aa5-2cff-485e-925c-fe3b4c9cadb3": {
+    "fr": "Continuer, page suivante",
+    "en": "Continue to the next page"
+  },
+  "d9f1fd64-61b2-4707-81fc-32f87c0e0c7c": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "994d4e81-f235-40ee-a582-ee54e332b0f4": {
+    "fr": "Continuer, page suivante",
+    "en": "Continue to the next page"
+  },
+  "6ab15a3d-4b41-4d64-bdf5-5954f2adfe36": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "b95e0d3f-c3b2-4312-9f08-3ef70aa0530e": {
+    "fr": "Continuer, page suivante",
+    "en": "Continue to the next page"
+  },
+  "23d3a05d-b8fe-40c0-b0eb-f45114aa00d7": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "a0043bdf-9f01-43ee-83d9-98a4a117c7bb": {
+    "fr": "Continuer, page suivante",
+    "en": "Continue to the next page"
+  },
+  "318f8e90-879b-4416-b384-957ebe81d281": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "add4dc5b-c747-4319-b897-91da71d17e02": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "820dd73f-cc4b-4bc0-ae0f-f855385ebd81": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "a2f0cdd4-e679-4436-8518-84dcb8a0b6fd": {
+    "fr": "Continuer, page suivante",
+    "en": "Continue to the next page"
+  },
+  "7293ad2c-3603-48a2-810d-9d14fbd23b17": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "4d013238-7334-45ac-9c6f-35b5c5cf8115": {
+    "fr": "Continuer, page suivante",
+    "en": "Continue to the next page"
+  },
+  "10c2ef9e-df64-4c57-8331-966933e2f128": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "666de7cf-9e65-4987-bf2c-4c3a3b1c6468": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "74824092-eb2b-4ff7-b67a-9cfc1d8dcc43": {
+    "fr": "Continuer, page suivante",
+    "en": "Continue to the next page"
+  },
+  "02930707-ff95-4a0c-9547-2420e7a632a2": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "e44f7daf-6717-499e-97ec-150dfb333c28": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "cfeec2ac-f0f9-447c-9264-6b51b356fca7": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "9450a351-33c5-4f69-8259-b7154378afa7": {
+    "fr": "Continuer, page suivante",
+    "en": "Continue to the next page"
+  },
+  "99374301-beea-4622-bf42-9174cb97154a": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "1fece509-0adc-41ac-940c-9de7a5bcc4ee": {
+    "fr": "Continuer, page suivante",
+    "en": "Continue to the next page"
+  },
+  "f41ca224-05ad-4663-b853-42f3473319d2": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "3de1768d-aa6c-4cfd-9d45-2b8c1db9a5c9": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "3043c686-ac26-4118-b95a-455ce1724f82": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "8eadf7a6-1c67-4a60-921a-8ef54983bf54": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "63fc2850-0c13-4add-ba17-0ac2afd06c7e": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "bb4c248e-f3ee-4282-a77c-8873141fafc1": {
+    "fr": "Continuer, page suivante",
+    "en": "Continue to the next page"
+  },
+  "53cc5a45-5ce7-44a9-bd29-d0e5ecc5f359": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "0935dfc1-f4d6-46e9-9adb-fa7602361d03": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "cbd9b772-217d-421f-9354-fb44b56335c8": {
+    "fr": "Continuer, page suivante",
+    "en": "Continue to the next page"
+  },
+  "33af094e-5d52-47f1-9e50-cc1b8c974ffa": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "b48ce477-4d32-4795-8991-718580f3b081": {
+    "fr": "Continuer, page suivante",
+    "en": "Continue to the next page"
+  },
+  "2865ca30-409d-4f9b-8f23-c7bde51c9219": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "498f9454-ab71-4eca-ae0f-bff15fb052f0": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "9941ea12-e395-4444-9c75-cad5f64c6b84": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "b4cacf05-12e2-4415-94ad-48041d2e3fe7": {
+    "fr": "Lien : la page Facebook de la Fédération de Bridge",
+    "en": "Link: the French Bridge Federation Facebook page"
+  },
+  "e52a3b47-56ed-4e41-81da-f7985d26191c": {
+    "fr": "Lien : le compte Instagram de la Fédération",
+    "en": "Link: the Federation's Instagram account"
+  },
+  "5a5409ac-58e9-4fb2-ac55-00ab159ce63b": {
+    "fr": "Lien : une vidéo YouTube sur le Mini Bridge",
+    "en": "Link: a YouTube video about Mini Bridge"
+  },
+  "05712587-94c6-46ea-8462-161a879fefc2": {
+    "fr": "Lien : la page LinkedIn de la Fédération",
+    "en": "Link: the Federation's LinkedIn page"
+  },
+  "2c7543bd-6905-43a4-b9eb-f484c22304ac": {
+    "fr": "Quitter le jeu",
+    "en": "Quit the game"
+  },
+  "cb81060a-4323-4ffa-ae86-5cc1e0a09be0": {
+    "fr": "Lien : jouer une vraie partie sur Bridge Training",
+    "en": "Link: play a real game on Bridge Training"
+  },
+  "96ae052c-27c4-4271-b8d0-82c991dfe99a": {
+    "fr": "Lien : le bridge éducatif sur le site de la Fédération",
+    "en": "Link: educational bridge on the Federation website"
+  },
+  "8f33e40b-8e0f-4d78-aa36-ca1a1459bc97": {
+    "fr": "Arrêter et revenir à la couverture",
+    "en": "Stop and go back to the cover"
+  },
+  "0a6d7ba7-1981-44b8-9673-b27e6e57f267": {
+    "fr": "Reprendre le jeu",
+    "en": "Back to the game"
+  },
+  "a2188f04-c922-42a6-8bf3-28c7aa3bac2c": {
+    "fr": "Fermer la règle et continuer",
+    "en": "Close the rule and continue"
+  },
+  "87634527-2a63-46a6-b3e6-378bd28553bb": {
+    "fr": "Fermer la règle et continuer",
+    "en": "Close the rule and continue"
+  },
+  "d5d5168f-6cf1-4943-a3a0-a5932c18b558": {
+    "fr": "Fermer la règle et continuer",
+    "en": "Close the rule and continue"
+  },
+  "ae71ae08-6972-4e25-8d20-5b12bcbbe7c9": {
+    "fr": "Fermer la règle et continuer",
+    "en": "Close the rule and continue"
+  },
+  "e451cd6f-358a-47d6-bb12-4b45c1bdbabd": {
+    "fr": "Fermer la règle et continuer",
+    "en": "Close the rule and continue"
+  },
+  "5e659edc-5f84-48e1-8637-6e28808953c8": {
+    "fr": "Fermer la règle et continuer",
+    "en": "Close the rule and continue"
+  },
+  "dd5c974d-767e-4dee-996a-d7663b03d4c3": {
+    "fr": "Fermer la règle et continuer",
+    "en": "Close the rule and continue"
+  },
+  "543013d9-e968-4cc1-88a8-efc20967c506": {
+    "fr": "Fermer la règle et continuer",
+    "en": "Close the rule and continue"
+  },
+  "c1677145-62bc-44d3-bf5f-984ef0411eab": {
+    "fr": "Démarrer le jeu",
+    "en": "Start the game"
+  },
+  "d566efe4-69db-4c37-88b5-14fd42f41815": {
+    "fr": "Continuer, page suivante",
+    "en": "Continue to the next page"
+  },
+  "b92d289b-5148-4f5a-9ce0-2da46e006de8": {
+    "fr": "Lire la règle 1",
+    "en": "Read rule 1"
+  },
+  "4a0925a7-854c-403f-9f20-fdb1d8921b35": {
+    "fr": "Lire la règle 2",
+    "en": "Read rule 2"
+  },
+  "bf650153-e4c0-4c66-b520-09d444761cfc": {
+    "fr": "Lire la règle 3",
+    "en": "Read rule 3"
+  },
+  "703ab045-a14b-4f9f-9288-829f618cedbd": {
+    "fr": "Continuer, page suivante",
+    "en": "Continue to the next page"
+  },
+  "8e36a282-51dc-40c7-90ae-82628138ffa9": {
+    "fr": "Lire la règle 4",
+    "en": "Read rule 4"
+  },
+  "f862722d-8396-424d-9c02-3bde2381943f": {
+    "fr": "Continuer, page suivante",
+    "en": "Continue to the next page"
+  },
+  "83d80953-7a5c-4ba8-b0fd-07e464b70877": {
+    "fr": "Lire la règle 5",
+    "en": "Read rule 5"
+  },
+  "1665a299-dac5-4f48-b100-096204ae2ddc": {
+    "fr": "Continuer, page suivante",
+    "en": "Continue to the next page"
+  },
+  "d58a1f4b-6183-4a6f-afa7-8ad64109c8e0": {
+    "fr": "Lire la règle 6",
+    "en": "Read rule 6"
+  },
+  "47a0aa94-3763-443d-8145-cd803f3adac0": {
+    "fr": "Continuer, page suivante",
+    "en": "Continue to the next page"
+  },
+  "75b03037-77ba-49db-ac57-2d7b44105a62": {
+    "fr": "Continuer, page suivante",
+    "en": "Continue to the next page"
+  },
+  "ecb3b4c4-700a-4200-9cc3-ee22a74ac5c4": {
+    "fr": "Lire la règle 7",
+    "en": "Read rule 7"
+  },
+  "633d6506-ee35-40e1-a262-b686072232b7": {
+    "fr": "Lire la règle 8",
+    "en": "Read rule 8"
+  }
+},
     translate: translate
   };
 })();

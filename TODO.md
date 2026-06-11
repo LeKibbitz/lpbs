@@ -16,7 +16,9 @@
 - [x] Demander la permission micro une fois au chargement (plus de popup sur la touche C)
 - [ ] Identifier les dialogues FR/EN mélangés signalés par Thomas (E2E propres en FR et en EN — piste : touche T ou langue persistée d'une session précédente)
 - [ ] Tester sur le Chrome quotidien de Thomas (installation manuelle)
-- [ ] Saisir la clé API Claude dans le popup pour activer la touche C
+- [x] Touche C pour tout le monde : relais VPS en ligne (DNS Vercel `pba` → VPS, vhost nginx, certbot) — champ clé API retiré du popup
+- [x] Prononciation : « un »–« neuf » au lieu de "one", libellés TOUT-EN-CAPS normalisés (MP3 régénérés)
+- [x] Repo git privé créé : github.com/LeKibbitz/lpbs
 - [ ] Option : icône dédiée plus travaillée
 - [ ] Option : publier sur le Chrome Web Store (compte développeur requis)
 - [ ] Option : voix temps réel type Gemini Live (nécessite une clé Google)

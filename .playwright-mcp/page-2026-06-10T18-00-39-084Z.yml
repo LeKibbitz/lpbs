@@ -1,0 +1,105 @@
+- main [ref=e4]:
+  - generic [ref=e11]:
+    - navigation [ref=e12]:
+      - button "Afficher les éléments interactifs" [ref=e393] [cursor=pointer]:
+        - img [ref=e394]
+      - menu [ref=e20]:
+        - group [ref=e21]:
+          - menuitem "Plein écran" [ref=e24] [cursor=pointer]:
+            - img [ref=e25]
+          - menuitem "Partager" [ref=e30] [cursor=pointer]:
+            - img [ref=e31]
+        - menuitem "Activez l’audio de la création" [ref=e132]:
+          - button "Activez l’audio de la création" [ref=e135] [cursor=pointer]:
+            - img [ref=e136]
+      - heading "Page 7 sur 28, 1.4" [level=1] [ref=e291]
+    - link "Page d'accueil de Genially" [ref=e46] [cursor=pointer]:
+      - /url: https://genially.com
+      - img [ref=e48]
+    - generic [ref=e293]:
+      - generic [ref=e295]:
+        - img [ref=e299]
+        - generic:
+          - form:
+            - radiogroup [ref=e301]:
+              - generic [ref=e303]:
+                - generic [ref=e304]:
+                  - textbox [ref=e308]:
+                    - paragraph [ref=e309]:
+                      - strong [ref=e313]:
+                        - text: Luna a presque terminé les épreuves de la forêt des Premiers Pas. Elle sait maintenant qu'au Petit Bridge, il y a
+                        - generic [ref=e315]:
+                          - button [disabled] [ref=e316] [cursor=pointer]
+                          - generic:
+                            - img
+                        - text: cartes en tout. L'ensemble des cartes est distribué une par une aux 4 joueurs. Chaque joueur reçoit
+                        - generic [ref=e318]:
+                          - button [disabled] [ref=e319] [cursor=pointer]
+                          - generic:
+                            - img
+                        - text: cartes.
+                    - paragraph [ref=e320]:
+                      - strong [ref=e324]:
+                        - text: Le Petit Bridge est un jeu d'
+                        - generic [ref=e326]:
+                          - button [disabled] [ref=e327] [cursor=pointer]
+                          - generic:
+                            - img
+                        - text: ". On ne joue pas seul : on joue avec un"
+                        - generic [ref=e329]:
+                          - button [disabled] [ref=e330] [cursor=pointer]
+                          - generic:
+                            - img
+                        - text: . Autour du tapis de jeu, les joueurs sont placés au Nord, au Sud, à l'Ouest et à l'
+                        - generic [ref=e332]:
+                          - button [disabled] [ref=e333] [cursor=pointer]
+                          - generic:
+                            - img
+                        - text: . Le partenaire de Est est placé en
+                        - generic [ref=e335]:
+                          - button [disabled] [ref=e336] [cursor=pointer]
+                          - generic:
+                            - img
+                        - text: .
+                  - generic [ref=e339]:
+                    - button "partenaire" [ref=e340] [cursor=pointer]:
+                      - img [ref=e341]
+                      - generic [ref=e345]: partenaire
+                    - button "Est" [ref=e346] [cursor=pointer]:
+                      - img [ref=e347]
+                      - generic [ref=e351]: Est
+                    - button "Ouest" [ref=e352] [cursor=pointer]:
+                      - img [ref=e353]
+                      - generic [ref=e357]: Ouest
+                    - button "équipe" [ref=e358] [cursor=pointer]:
+                      - img [ref=e359]
+                      - generic [ref=e363]: équipe
+                    - button "10" [ref=e364] [cursor=pointer]:
+                      - img [ref=e365]
+                      - generic [ref=e369]: "10"
+                    - button "40" [ref=e370] [cursor=pointer]:
+                      - img [ref=e371]
+                      - generic [ref=e375]: "40"
+                - status [ref=e376]
+                - generic [ref=e377]:
+                  - img [ref=e379] [cursor=pointer]
+                  - button "Envoyer" [disabled] [ref=e382]:
+                    - generic [ref=e386]: Envoyer
+        - heading "Question 4/4" [level=2] [ref=e390]
+        - generic:
+          - generic:
+            - button "Aller à la page 27":
+              - img [ref=e398] [cursor=pointer]
+      - status
+    - button
+  - generic:
+    - generic:
+      - generic: Commencez gratuitement
+  - generic:
+    - generic:
+      - generic:
+        - generic: Afficher les détails
+        - generic:
+          - img
+  - generic:
+    - generic: Commencer maintenant

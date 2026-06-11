@@ -1,0 +1,9 @@
+services:
+  pba-relay:
+    build: .
+    container_name: pba-relay
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3104:8000"
+    env_file:
+      - .env

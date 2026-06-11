@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Petit Bridge Audio Guide</title>
+  <style>
+    body { font-family: -apple-system, system-ui, sans-serif; width: 300px; margin: 0; padding: 16px; background: #1a103c; color: #fff; }
+    h1 { font-size: 16px; margin: 0 0 12px; }
+    .row { display: flex; align-items: center; justify-content: space-between; margin: 10px 0; }
+    label { font-size: 14px; }
+    select, input[type="range"] { width: 130px; }
+    button#toggle { width: 100%; padding: 10px; font-size: 15px; font-weight: 600; border: 0; border-radius: 8px; cursor: pointer; background: #7c5cff; color: #fff; }
+    button#toggle.off { background: #555; }
+    .keys { font-size: 12px; line-height: 1.7; margin-top: 12px; border-top: 1px solid #ffffff33; padding-top: 10px; }
+    .keys b { display: inline-block; min-width: 38px; background: #ffffff22; border-radius: 4px; padding: 0 5px; text-align: center; margin-right: 4px; }
+    .hint { font-size: 11px; opacity: .7; margin-top: 8px; }
+    .block { margin-top: 12px; border-top: 1px solid #ffffff33; padding-top: 10px; }
+    .block label { font-size: 12px; display: block; margin-bottom: 6px; }
+    .keyrow { display: flex; gap: 6px; }
+    .keyrow input { flex: 1; padding: 6px; border-radius: 6px; border: 0; }
+    .keyrow button { padding: 6px 12px; border: 0; border-radius: 6px; background: #7c5cff; color: #fff; cursor: pointer; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <h1>🔊 Petit Bridge Audio Guide</h1>
+
+  <button id="toggle">Voix activée</button>
+
+  <div class="row">
+    <label for="lang">Langue / Language</label>
+    <select id="lang">
+      <option value="fr">Français</option>
+      <option value="en">English</option>
+    </select>
+  </div>
+
+  <div class="row">
+    <label for="rate">Vitesse</label>
+    <input type="range" id="rate" min="0.5" max="2" step="0.1" value="1">
+  </div>
+
+  <div class="keys">
+    <div><b>H</b> aide vocale</div>
+    <div><b>R</b> répéter la page</div>
+    <div><b>Q</b> question et réponses</div>
+    <div><b>1-9</b> choisir / activer</div>
+    <div><b>L</b> liste des boutons</div>
+    <div><b>V</b> valider l'exercice</div>
+    <div><b>C</b> poser une question à la voix</div>
+    <div><b>S</b> / <b>Échap</b> silence</div>
+    <div><b>T</b> français ↔ english</div>
+    <div><b>+</b> / <b>-</b> vitesse de la voix</div>
+  </div>
+
+  <div class="hint">Sur la page du jeu, appuie sur une touche (par ex. H) pour démarrer la voix.</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

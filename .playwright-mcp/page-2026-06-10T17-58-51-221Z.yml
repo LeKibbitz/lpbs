@@ -1,0 +1,54 @@
+- main [ref=e4]:
+  - generic [ref=e11]:
+    - navigation [ref=e12]:
+      - button "Afficher les éléments interactifs" [ref=e184] [cursor=pointer]:
+        - img [ref=e185]
+      - menu [ref=e20]:
+        - group [ref=e21]:
+          - menuitem "Plein écran" [ref=e24] [cursor=pointer]:
+            - img [ref=e25]
+          - menuitem "Partager" [ref=e30] [cursor=pointer]:
+            - img [ref=e31]
+        - menuitem "Activez l’audio de la création" [ref=e132]:
+          - button "Activez l’audio de la création" [ref=e135] [cursor=pointer]:
+            - img [ref=e136]
+      - heading "Page 4 sur 28, 1.1" [level=1] [ref=e142]
+    - link "Page d'accueil de Genially" [ref=e46] [cursor=pointer]:
+      - /url: https://genially.com
+      - img [ref=e48]
+    - generic [ref=e144]:
+      - generic [ref=e146]:
+        - img [ref=e150]
+        - generic:
+          - form:
+            - radiogroup "Combien y a-t-il de familles (couleurs) dans le jeu de cartes du Petit Bridge ?" [ref=e152]:
+              - generic [ref=e154]:
+                - heading "Combien y a-t-il de familles (couleurs) dans le jeu de cartes du Petit Bridge ?" [level=2] [ref=e155]
+                - generic [ref=e157]:
+                  - radio "1 famille" [ref=e158] [cursor=pointer]:
+                    - paragraph [ref=e161]: 1 famille
+                  - radio "2 familles" [ref=e162] [cursor=pointer]:
+                    - paragraph [ref=e165]: 2 familles
+                  - radio "5 familles" [ref=e166] [cursor=pointer]:
+                    - paragraph [ref=e169]: 5 familles
+                  - radio "4 familles" [ref=e170] [cursor=pointer]:
+                    - paragraph [ref=e173]: 4 familles
+        - heading "Question 1/4" [level=2] [ref=e174]
+        - generic [ref=e181]: Voici les cartes du jeu Petit Bridge
+        - generic:
+          - generic:
+            - button "Aller à la page 27":
+              - img [ref=e189] [cursor=pointer]
+      - status
+    - button
+  - generic:
+    - generic:
+      - generic: Commencez gratuitement
+  - generic:
+    - generic:
+      - generic:
+        - generic: Afficher les détails
+        - generic:
+          - img
+  - generic:
+    - generic: Commencer maintenant

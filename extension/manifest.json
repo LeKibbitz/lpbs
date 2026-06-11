@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Petit Bridge Audio Guide",
+  "version": "2.0.0",
+  "description": "Guide audio pour non-voyants : décrit oralement chaque page du jeu Genially « Luna et le grimoire des cartes » (Petit Bridge) avec une voix naturelle et rend le jeu jouable au clavier. Français / English.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": ["storage"],
+  "host_permissions": ["https://api.anthropic.com/*", "https://pba.lekibbitz.fr/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://view.genially.com/*",
+        "https://view.genial.ly/*"
+      ],
+      "js": ["descriptions.js", "gamedata.js", "cards.js", "strings.js", "audio-map.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["audio/*"],
+      "matches": [
+        "https://view.genially.com/*",
+        "https://view.genial.ly/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Petit Bridge Audio Guide"
+  }
+}

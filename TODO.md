@@ -1,0 +1,22 @@
+# TODO — LPBS (Petit Bridge Audio Guide)
+
+- [x] Analyser la structure du jeu Genially (API view, slides, activités)
+- [x] Extension Chrome MV3 : TTS, détection de page, clavier accessible
+- [x] Descriptions FR/EN rédigées pour les 34 pages (visuels inclus)
+- [x] Identification des 49 cartes par image (numéro + couleur + animal)
+- [x] Support quiz, textes à trous, drag & drop (DNDoo), popups de règles
+- [x] Tests E2E Playwright : 9/9 basique, 13/13 parcours complet leçon 1 + dnd
+- [x] README d'installation
+- [x] v2 : voix neurale préenregistrée (637 MP3 edge-tts FR/EN embarqués)
+- [x] v2 : respiration — annonces en segments avec pauses
+- [x] v2 : ducking du son natif du jeu pendant que le guide parle
+- [x] v2 : mode conversation touche C (micro → Claude → réponse vocale)
+- [x] Supprimer l'annonce « Page X sur 28 » à chaque page (trop lourd)
+- [x] Corriger la double annonce de la page au démarrage (boot + observer)
+- [x] Demander la permission micro une fois au chargement (plus de popup sur la touche C)
+- [ ] Identifier les dialogues FR/EN mélangés signalés par Thomas (E2E propres en FR et en EN — piste : touche T ou langue persistée d'une session précédente)
+- [ ] Tester sur le Chrome quotidien de Thomas (installation manuelle)
+- [ ] Saisir la clé API Claude dans le popup pour activer la touche C
+- [ ] Option : icône dédiée plus travaillée
+- [ ] Option : publier sur le Chrome Web Store (compte développeur requis)
+- [ ] Option : voix temps réel type Gemini Live (nécessite une clé Google)

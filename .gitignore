@@ -1,0 +1,21 @@
+# Temp / scratch
+.tmp/
+*.log
+
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node
+node_modules/
+
+# Packaging artifacts (rebuilt from extension/)
+petit-bridge-audio-guide/
+petit-bridge-audio-guide.zip
+
+# OS
+.DS_Store

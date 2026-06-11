@@ -1,0 +1,50 @@
+- main [ref=e4]:
+  - generic [ref=e11]:
+    - navigation [ref=e12]:
+      - button "Afficher les éléments interactifs" [ref=e121] [cursor=pointer]:
+        - img [ref=e122]
+      - menu [ref=e20]:
+        - group [ref=e21]:
+          - menuitem "Plein écran" [ref=e24] [cursor=pointer]:
+            - img [ref=e25]
+          - menuitem "Partager" [ref=e30] [cursor=pointer]:
+            - img [ref=e31]
+      - heading "Page 3 sur 28, MENU 1" [level=1] [ref=e98]
+    - link "Page d'accueil de Genially" [ref=e46] [cursor=pointer]:
+      - /url: https://genially.com
+      - img [ref=e48]
+    - generic [ref=e100]:
+      - generic [ref=e102]:
+        - generic:
+          - generic:
+            - button "Aller à la page suivante"
+        - generic [ref=e106]:
+          - generic:
+            - generic: Cette première leçon emmène Luna
+          - generic: dans la Forêt des Premiers Pas.
+          - generic:
+            - generic: Dans cette forêt, elle devra répondre à des questions pour découvrir les cartes, les joueurs et apprendre à jouer avec un partenaire.
+          - generic:
+            - generic: Si Luna réussit toutes les épreuves de la forêt, elle obtiendra la
+          - generic: Potion des Fondations.
+          - generic: Es-tu prêt.e
+          - generic: à l’aider ?
+        - heading "Leçon 01" [level=2] [ref=e107]
+        - heading "Le grimoire du Petit Bridge" [level=3] [ref=e110]
+        - generic:
+          - generic:
+            - button "Aller à la page 27":
+              - img [ref=e128] [cursor=pointer]
+      - status
+    - button
+  - generic:
+    - generic:
+      - generic: Commencez gratuitement
+  - generic:
+    - generic:
+      - generic:
+        - generic: Afficher les détails
+        - generic:
+          - img
+  - generic:
+    - generic: Commencer maintenant

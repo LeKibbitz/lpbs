@@ -22,6 +22,9 @@
 - [ ] Audio : « un » trop court/tronqué, pauses et fluidité à revoir (priorité après le post LinkedIn)
 - [x] README public + licence MIT, repo passé en public
 - [x] Posts LinkedIn publiés le 11 juin 2026 : perso (storytelling Strasbourg, mention Kibbitz' Corner) + page pro Kibbitz' Corner
+- [x] Vidéos démo YouTube ép. 1 + ép. 2 générées (pipeline tools/demo_capture.py + demo_build.py, narration = MP3 de l'extension) — fichiers dans videos/, à uploader sur YouTube
+- [ ] Uploader les 2 vidéos démo sur YouTube (titres + descriptions fournis)
+- [ ] Vérifier le conflit éventuel des touches +/- (vitesse) avec le zoom navigateur/loupe — analyse : pas de conflit (Cmd/Ctrl ignorés), à confirmer à l'usage
 - [ ] Tester sur le Chrome quotidien de Thomas (installation manuelle)
 - [x] Touche C pour tout le monde : relais VPS en ligne (DNS Vercel `pba` → VPS, vhost nginx, certbot) — champ clé API retiré du popup
 - [x] Prononciation : « un »–« neuf » au lieu de "one", libellés TOUT-EN-CAPS normalisés (MP3 régénérés)

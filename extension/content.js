@@ -266,7 +266,7 @@
     if (!joined) return;
     if (joined === lastSpoken && Date.now() - lastSpokenAt < 3000) return;
     lastSpoken = joined; lastSpokenAt = Date.now();
-    log('speak:', joined.slice(0, 500));
+    log('speak:', joined.slice(0, 1500));
     if (!hadUserGesture) {
       // Accumulate instead of overwrite, so the welcome announcement is not
       // lost when the game reveals extra text before the first key press.

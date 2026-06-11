@@ -24,6 +24,13 @@ directement sur GitHub :
 - **Français** : [README-audio-fr.mp3](README-audio-fr.mp3)
 - **English**: [README-audio-en.mp3](README-audio-en.mp3)
 
+## 🎬 Démos vidéo
+
+L'extension en action, narration 100 % par la voix de l'extension :
+
+- **Épisode 1 — Luna et le grimoire des cartes** : https://youtu.be/HSDQajL4LvQ
+- **Épisode 2 — Mission BridgeBot** : https://youtu.be/aTakStKx5Rc
+
 ## Installation (2 minutes)
 
 1. Télécharge ce dépôt : bouton vert **Code → Download ZIP**, puis dézippe

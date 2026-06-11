@@ -19,10 +19,10 @@
   const GENIALLY_ID = (location.pathname.match(/[0-9a-f]{24}/) || [null])[0];
   const CURATED_ALL = window.PBA_DESCRIPTIONS || {};
   const CURATED = (GENIALLY_ID && CURATED_ALL[GENIALLY_ID]) || null;
-  const BUNDLED = window.PBA_GAMEDATA && window.PBA_GAMEDATA.geniallyId === GENIALLY_ID
-    ? window.PBA_GAMEDATA : null;
+  const BUNDLED = (window.PBA_GAMES && window.PBA_GAMES[GENIALLY_ID]) || null;
   const UI = window.PBA_STRINGS;
-  const AUDIO_MAP = window.PBA_AUDIO || {};
+  // Audio map is per game (each game has its own narrator voice).
+  const AUDIO_MAP = (window.PBA_AUDIO && window.PBA_AUDIO[GENIALLY_ID]) || {};
 
   const settings = { enabled: true, lang: 'fr', rate: 1.0, verbose: false };
   let model = BUNDLED;          // {title, total, slides:[{id, order, name, popup, texts, activity}]}

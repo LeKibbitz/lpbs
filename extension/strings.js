@@ -3,7 +3,7 @@
 // tools/extract_segments.mjs at build time (audio pre-generation).
 window.PBA_STRINGS = {
   fr: {
-    welcome: "Bonjour ! Je suis ton guide audio pour le Petit Bridge.",
+    welcome: "Bonjour ! Je suis ton guide audio.",
     help: "Voici comment on joue ensemble. Touche R : je répète la description de la page. Touche Q : je relis la question et les réponses. Touches 1 à 9 : tu choisis une réponse ou tu actives un bouton. Touche L : je te liste tous les boutons de la page. Touche V : tu valides l'exercice. Touche D : je décris le décor de la page. Touche C : tu me poses une question à voix haute, et je te réponds. Touche S ou Échap : je me tais. Touche T : on passe en anglais, ou on revient en français. Et les touches plus et moins changent la vitesse de ma voix.",
     page: (o, t) => `Page ${o} sur ${t}.`,
     question: "Question :",
@@ -36,7 +36,7 @@ window.PBA_STRINGS = {
     askFailed: "Désolé, je n'ai pas réussi à réfléchir. Vérifie la connexion, et réessaie."
   },
   en: {
-    welcome: "Hello! I'm your audio guide for Petit Bridge.",
+    welcome: "Hello! I'm your audio guide.",
     help: "Here is how we play together. Key R: I repeat the page description. Key Q: I read the question and the answers again. Keys 1 to 9: you pick an answer or press a button. Key L: I list all the buttons on the page. Key V: you submit the exercise. Key D: I describe the page scenery. Key C: you ask me a question out loud, and I answer. Key S or Escape: I stay quiet. Key T: we switch to French, or back to English. And the plus and minus keys change how fast I speak.",
     page: (o, t) => `Page ${o} of ${t}.`,
     question: "Question:",

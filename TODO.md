@@ -15,6 +15,10 @@
 - [x] Corriger la double annonce de la page au démarrage (boot + observer)
 - [x] Demander la permission micro une fois au chargement (plus de popup sur la touche C)
 - [ ] Identifier les dialogues FR/EN mélangés signalés par Thomas (E2E propres en FR et en EN — piste : touche T ou langue persistée d'une session précédente)
+- [x] Audiodescription des décors : touche D + option popup, FR/EN, écrite depuis les visuels du jeu
+- [x] Épisode 2 « Mission BridgeBot » (Mini Bridge) : support multi-jeux, descriptions FR/EN 42 pages, voix masculine (Henri) prégénérée
+- [ ] Ép. 2 : identifier les ~117 images de cartes (équivalent cards.js) pour les exercices de jeu à la carte
+- [ ] Ép. 2 : tester le parcours complet des 5 missions (drag & drop, vérifications)
 - [ ] Tester sur le Chrome quotidien de Thomas (installation manuelle)
 - [x] Touche C pour tout le monde : relais VPS en ligne (DNS Vercel `pba` → VPS, vhost nginx, certbot) — champ clé API retiré du popup
 - [x] Prononciation : « un »–« neuf » au lieu de "one", libellés TOUT-EN-CAPS normalisés (MP3 régénérés)

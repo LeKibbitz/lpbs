@@ -331,3 +331,242 @@ window.PBA_DESCRIPTIONS = {
     slide.en.detail = scenes.map(k => SCENES[k].en).join(' ');
   }
 })();
+
+// ---------------------------------------------------------------------------
+// Episode 2 - "Mission BridgeBot : le protocole Mini Bridge" (sci-fi sequel).
+window.PBA_DESCRIPTIONS["6999b0b9d1e83ea5a328b462"] = (function () {
+  const SC = {
+    control: {
+      fr: "Le décor : la salle de contrôle d'un vaisseau spatial, sombre et silencieuse. Un écran géant encadré de néons bleu turquoise affiche BridgeBot en grandes lettres lumineuses. Devant, un pupitre de commande et un fauteuil vide ; sur le côté, des consoles couvertes d'écrans et de boutons.",
+      en: "The scenery: the control room of a spaceship, dark and silent. A giant screen framed in glowing cyan neon displays BridgeBot in big bright letters. In front of it, a command desk and an empty chair; on the side, consoles covered with screens and buttons."
+    },
+    bridge: {
+      fr: "Le décor : la passerelle circulaire du vaisseau. Au centre, une console hexagonale entourée de fauteuils pivotants et de deux écrans de contrôle. Des tubes de lumière bleu turquoise éclairent les murs blindés et une grande porte ronde fermée, comme un coffre-fort.",
+      en: "The scenery: the ship's circular command bridge. In the middle, a hexagonal console surrounded by swivel chairs and two control screens. Cyan light tubes line the armoured walls and a big round closed door, like a vault."
+    },
+    initRoom: {
+      fr: "Le décor : la Salle d'initialisation, un laboratoire futuriste tout blanc, baigné de lumière. Des cartes du monde holographiques bleues flottent sur les murs et au plafond. Sur le sol brillant, des circuits lumineux bleu turquoise relient des pupitres ronds, comme les pièces d'une machine géante.",
+      en: "The scenery: the Initialisation Room, a futuristic lab all in white, bathed in light. Blue holographic world maps float on the walls and ceiling. On the shiny floor, glowing cyan circuits connect round consoles, like parts of a giant machine."
+    },
+    simRoom: {
+      fr: "Le décor : la Salle de simulation, une grande salle sombre. Quatre tables de jeu lumineuses marquées Nord, Sud, Est et Ouest brillent en bleu électrique, et des cartes à jouer holographiques flottent dans les airs comme des papillons de lumière.",
+      en: "The scenery: the Simulation Room, a large dark hall. Four glowing game tables marked North, South, East and West shine electric blue, and holographic playing cards float in the air like butterflies of light."
+    },
+    stratRoom: {
+      fr: "Le décor : la Salle des stratégies, éclairée en orange et vert. Sur de grands écrans, des robots en armure bleue, verte, orange et violette s'affrontent en tournoi, avec leurs scores affichés en chiffres lumineux. Des lignes d'énergie relient les équipes comme un plan de bataille.",
+      en: "The scenery: the Strategy Room, lit in orange and green. On big screens, robots in blue, green, orange and purple armour compete in a tournament, their scores shown in glowing digits. Lines of energy connect the teams like a battle plan."
+    },
+    pilotRoom: {
+      fr: "Le décor : la Salle du pilotage central, plongée dans une lumière violette. Tu te trouves au cœur d'un circuit électronique géant, avec ses fils et ses composants. Au centre, deux grandes cartes à jouer au dos décoré brillent en rose et en bleu, posées comme des puces sur la carte mère.",
+      en: "The scenery: the Central Piloting Room, bathed in purple light. You stand at the heart of a giant electronic circuit board, with its wires and components. In the middle, two large playing cards with ornate backs glow pink and blue, set like chips on the motherboard."
+    },
+    projRoom: {
+      fr: "Le décor : la Salle de projection, bleu nuit. Un immense écran affiche des circuits lumineux et des lignes de code. De chaque côté, des postes de contrôle portent le logo BridgeBot, et au centre trône un petit podium rond à trois marches.",
+      en: "The scenery: the Projection Room, midnight blue. A huge screen displays glowing circuits and lines of code. On each side, control stations carry the BridgeBot logo, and in the middle stands a small round podium with three steps."
+    },
+    robots: {
+      fr: "Le décor : la salle baigne maintenant dans une lumière verte de victoire. Sur l'écran géant, une grande coche verte et les mots Système restauré. Au centre, BridgeBot, un grand robot blanc et argenté au ventre vert, entouré de quatre petits robots bleu, vert, orange et violet qui affichent des cœurs sur leur poitrine.",
+      en: "The scenery: the room now glows with green victory light. On the giant screen, a big green check mark and the words System restored. In the middle stands BridgeBot, a tall white and silver robot with a green chest, surrounded by four small robots in blue, green, orange and purple, hearts glowing on their chests."
+    },
+    exitRoom: {
+      fr: "Le décor : une salle blanche et calme du vaisseau, avec des tables rondes holographiques qui projettent des cartes du monde en bleu pâle.",
+      en: "The scenery: a calm white room of the ship, with round holographic tables projecting pale blue world maps."
+    },
+    panel: {
+      fr: "Le décor : un grand écran de données s'affiche par-dessus la page, comme une fiche de protocole du vaisseau.",
+      en: "The scenery: a large data screen appears over the page, like one of the ship's protocol sheets."
+    }
+  };
+
+  const slides = {};
+  const def = (id, scene, fr, en) => {
+    slides[id] = {
+      fr: { pre: fr, detail: SC[scene].fr },
+      en: { full: en, detail: SC[scene].en }
+    };
+  };
+
+  def("25be3f38-4674-42cb-9655-b9f3a6fb3cea", 'control',
+    "Page de couverture. Mission BridgeBot : le protocole Mini Bridge.",
+    "Cover page. BridgeBot Mission: the Mini Bridge protocol. Press 1 to start the game.");
+  def("75f3916a-294d-4169-8f49-e58c0507c8bd", 'bridge',
+    "L'écran de briefing de ta mission.",
+    "Your mission briefing. In the near future, humans entrusted strategy games to a central artificial intelligence: BridgeBot. But evil robots infiltrated its system, took control and corrupted it. Now it applies the rules without understanding them and disrupts every game. That is where you come in. You are recruited as reprogramming agents. Your mission: restore the essential Mini Bridge protocols, neutralise the corrupted robots and give BridgeBot back its ability to think and play as a team. Will you take back control of the system before it is too late? Press 1 to continue.");
+  def("24c272ea-52d9-4928-a9e8-d5833f369c88", 'initRoom',
+    "Mission 1 : la Salle d'initialisation.",
+    "Mission 1: the Initialisation Room. Protocol: system foundations. BridgeBot has been hacked. The corrupted robots disabled the basics of Mini Bridge: the system no longer recognises the cards, the players or the positions. Your first mission is to reactivate the Foundations Module. You will identify the Mini Bridge equipment, understand how cards are dealt, place the players correctly and reactivate the idea of a team. Press 1 to begin.");
+  def("50c01e57-811e-4701-b927-ac1c319cfb30", 'initRoom',
+    "Question 1 sur 4. Les cartes du Mini Bridge sont affichées en rangées colorées.",
+    "Question 1 of 4. The Mini Bridge cards are displayed in coloured rows. How many suits are there in the Mini Bridge card deck?");
+  def("392bc879-3c71-4d3e-b715-325c2e96b76e", 'initRoom',
+    "Question 2 sur 4. Une rangée de cartes est affichée, de la plus faible à gauche à la plus forte à droite.",
+    "Question 2 of 4. A row of cards is displayed, from the weakest on the left to the strongest on the right. What is the strongest card in a suit?");
+  def("b29c701a-c65d-4920-b3dd-71301d2cdaed", 'initRoom',
+    "Question 3 sur 4. L'image montre un tapis de jeu vu de dessus, avec les quatre joueurs placés aux points cardinaux.",
+    "Question 3 of 4. The picture shows a game mat seen from above, with four players at the compass points. In bridge you play two against two; partners sit facing each other. Who is North's partner?");
+  def("dae35015-e12b-4fe8-ad4d-b615e164d900", 'initRoom',
+    "Question 4 sur 4. Exercice : un texte à trous. Choisis les mots avec les touches chiffrées pour remplir les blancs, puis valide avec V.",
+    "Question 4 of 4. A fill-in-the-blanks exercise. Pick the words with the number keys to fill the gaps, then press V to submit.");
+  def("70c19774-f41b-42ba-a75e-8e93ff5b29ff", 'initRoom',
+    "Victoire ! Le Module Fondations s'allume sur l'écran.",
+    "Victory! You discovered the Mini Bridge equipment and restored BridgeBot's Foundations Module. Press 1 to continue.");
+  def("0ba7eb8d-2f8f-43cb-983f-3b5989a496fc", 'simRoom',
+    "Mission 2 : la Salle de simulation.",
+    "Mission 2: the Simulation Room. Protocol: tricks and rules. The corrupted robots scrambled the rules of the game. BridgeBot no longer knows how to play a card properly. You will respect the requested suit, understand how a trick is won, and identify the strongest card. Each good decision reactivates a line of code. At the end of the mission you will restore the Tricks Module. Press 1 to begin.");
+  def("62f19c7d-478e-420c-953d-8a564db9d911", 'simRoom',
+    "Question 1 sur 4. Une partie est en cours sur la table holographique : Ouest a posé le Roi de carreau, et chaque joueur met une carte à carreau. Choisis une carte de ton jeu avec les touches chiffrées.",
+    "Question 1 of 4. A game is running on the holographic table: West dealt and led the King of diamonds, and every player plays a diamond. Among your diamonds, choose a card to play with the number keys.");
+  def("d0a88456-92a3-4349-aee4-c7eb0a85a3ad", 'simRoom',
+    "Question 2 sur 4. Sur la table, chaque joueur a joué une carte à pique.",
+    "Question 2 of 4. A spade was led on the table, and every player played a spade from their hand. In your opinion, who won the trick?");
+  def("1f5b78ad-8caa-414e-94f5-b35f0f9abcea", 'simRoom',
+    "Question 3 sur 4. Nord a gagné la levée avec l'As de pique et rejoue un 5 de cœur ; Est pose le 9 de cœur. Tu n'as pas de cœur : choisis une carte à défausser avec les touches chiffrées.",
+    "Question 3 of 4. North won the trick with the Ace of spades and leads the 5 of hearts; East plays the 9 of hearts. You have no hearts: choose a card to discard with the number keys.");
+  def("a7f00ca1-58e4-4cc1-81e4-8f010ef3b73f", 'simRoom',
+    "Question 4 sur 4. Exercice : un texte à trous. Choisis les mots avec les touches chiffrées, puis valide avec V.",
+    "Question 4 of 4. A fill-in-the-blanks exercise. Pick the words with the number keys, then press V to submit.");
+  def("83c66b33-ffd5-4d61-8503-b7a4f8cc0bcd", 'simRoom',
+    "Victoire ! Le Module des Levées s'allume sur l'écran.",
+    "Victory! You learned how to play cards and win a trick. You restore the Tricks Module. Press 1 to continue.");
+  def("2757ec9a-0d4b-4ca9-8d21-24da3b5d2eea", 'stratRoom',
+    "Mission 3 : la Salle des stratégies.",
+    "Mission 3: the Strategy Room. Protocol: team play. BridgeBot now plays alone... it forgot that Mini Bridge is played two against two. You will watch your partner's cards, decide when to support them, avoid wasting a strong card, and understand that you do not play only for yourself. If you succeed you will reactivate the Cooperation Module and neutralise one more corrupted robot. Press 1 to begin.");
+  def("f886a5a6-746a-4a30-ab65-39968aa542d7", 'stratRoom',
+    "Question 1 sur 4. Une partie est affichée sur la table : ton partenaire en Nord a déjà posé une carte. Conseille une carte à BridgeBot avec les touches chiffrées.",
+    "Question 1 of 4. A game is displayed on the table: your partner in North has already played a card. Advise BridgeBot which card to play, using the number keys.");
+  def("a25d9c4c-6b09-4230-a7e6-fa4f4ac26198", 'stratRoom',
+    "Question 2 sur 4. Une nouvelle donne est affichée. Conseille une carte à BridgeBot avec les touches chiffrées.",
+    "Question 2 of 4. A new deal is displayed. Advise BridgeBot which card to play, using the number keys.");
+  def("408c9316-b954-425c-9aaf-d0c4cffc4f03", 'stratRoom',
+    "Question 3 sur 4. Les mains de chaque joueur sont visibles. Conseille une carte pour Est et pour Sud avec les touches chiffrées.",
+    "Question 3 of 4. Every player's cards are visible. Advise which card East and South should play, using the number keys.");
+  def("6e78eea0-10b2-493c-b9ff-638a92577ee2", 'stratRoom',
+    "Question 4 sur 4. Exercice : un texte à trous. Choisis les mots avec les touches chiffrées, puis valide avec V.",
+    "Question 4 of 4. A fill-in-the-blanks exercise. Pick the words with the number keys, then press V to submit.");
+  def("6d701235-b927-4f1d-8139-ce8c25cccae4", 'stratRoom',
+    "Victoire ! Le Module Coopération s'allume sur l'écran.",
+    "Victory! You learned to play with your partner: you win tricks together. You restore the Cooperation Module. Press 1 to continue.");
+  def("d6dbbffb-3aba-4ac6-ad5b-9bed4b1e639b", 'pilotRoom',
+    "Mission 4 : la Salle du pilotage central.",
+    "Mission 4: the Central Piloting Room. Protocol: the dummy. The enemy robots disabled the most strategic module: the Dummy. BridgeBot no longer understands that a player can pilot their partner's cards when they are face up. In this room you will identify the opening lead, understand the dummy's role, know that the dummy makes no decisions, and pilot both hands with strategy. Press 1 to begin.");
+  def("71497f16-6c41-4304-a27d-933852b5a254", 'pilotRoom',
+    "Question 1 sur 4. Ouest pose l'As de carreau. Le jeu de l'Endormi se dévoile face visible : tu joues pour ton partenaire. Pose le 6 de carreau sur la table, puis valide avec V.",
+    "Question 1 of 4. West leads the Ace of diamonds. The dummy's hand is revealed face up: you play for your partner. Put the 6 of diamonds on the table, then press V to submit.");
+  def("9c37de8b-42c7-41e6-9f33-8ef8bcbc8119", 'pilotRoom',
+    "Question 2 sur 4. Nord est l'Endormi, ses cartes sont visibles. Deux choix de jeu te sont proposés en images.",
+    "Question 2 of 4. North is the dummy, its cards are face up. Two ways of playing are shown as pictures: how would you play in East's place? Choose with the number keys.");
+  def("b5e5643a-6448-400b-b374-e701ab972a50", 'pilotRoom',
+    "Question 3 sur 4. Tu joues avec le jeu de l'Endormi en Nord. Pose tes cartes dans le bon ordre pour gagner 4 levées, avec les touches chiffrées.",
+    "Question 3 of 4. You play with the dummy's hand in North. Play your cards in the right order to win 4 tricks, using the number keys.");
+  def("4d55708b-1c18-42b2-92b9-7ef5a66b60ce", 'pilotRoom',
+    "Question 4 sur 4. Exercice : un texte à trous. Choisis les mots avec les touches chiffrées, puis valide avec V.",
+    "Question 4 of 4. A fill-in-the-blanks exercise. Pick the words with the number keys, then press V to submit.");
+  def("637eb069-49db-4ed4-89c5-5dbf15e53e46", 'pilotRoom',
+    "Victoire ! Le Module Endormi s'allume sur l'écran.",
+    "Victory! BridgeBot now knows the essential rules: the cards, the tricks, team play and the dummy's role. You restore the Dummy Module. Press 1 to continue.");
+  def("7686455e-181b-4c9c-9f9e-bfa4b9b32428", 'projRoom',
+    "Mission 5 : la Salle de projection.",
+    "Mission 5: the Projection Room. Protocol: choosing the contract. The corrupted robots sabotaged the planning module. BridgeBot plays cards but can no longer set a goal before starting. In Mini Bridge you do not play at random: before the first card, the team decides how many tricks it thinks it can win. You will look at your team's cards, identify your strengths, count likely tricks and choose a realistic contract. If you succeed you will restore the Contract Module. Press 1 to begin.");
+  def("815ab4f3-01f9-4054-9389-bb49e2a10967", 'projRoom',
+    "Question 1 sur 4. L'écran affiche la valeur des Honneurs : l'As vaut 4 points, le Roi 3, la Dame 2 et le Valet 1. Une main de cartes est affichée.",
+    "Question 1 of 4. The screen shows the value of the honours: the Ace is worth 4 points, the King 3, the Queen 2 and the Jack 1. A hand of cards is displayed. Work out the number of honour points in this hand and answer with the number keys.");
+  def("24287775-cd60-416a-8f2a-6a39389991a5", 'projRoom',
+    "Question 2 sur 4. Les quatre mains des joueurs sont affichées autour de la table.",
+    "Question 2 of 4. The four players' hands are displayed around the table. Count each player's points and decide which team has the most points. Answer with the number keys.");
+  def("7ea4ae19-6f61-4f68-891a-7ed08d7661ba", 'projRoom',
+    "Question 3 sur 4. Les points sont calculés : l'équipe Nord-Sud a 26 points, l'équipe Est-Ouest 14 points. La table de décision des contrats est affichée.",
+    "Question 3 of 4. The points are counted: the North-South team has 26 points, the East-West team 14. The contract decision table is displayed. The team with the most points commits to a contract: which one? Answer with the number keys.");
+  def("67c44e35-27b4-47ef-b068-3516e3a472d9", 'projRoom',
+    "Question 4 sur 4. Exercice : un texte à trous. Choisis les mots avec les touches chiffrées, puis valide avec V.",
+    "Question 4 of 4. A fill-in-the-blanks exercise. Pick the words with the number keys, then press V to submit.");
+  def("81fceed7-5feb-48c4-a861-ee555460db5c", 'robots',
+    "Mission accomplie ! Tous les modules sont restaurés.",
+    "Mission accomplished, agents! You reactivated the Protection Module. The corrupted robots are neutralised and the system is secure. BridgeBot is operational again: it understands the rules, cooperates with its partner and plans before playing. Thanks to you, Mini Bridge is saved. The network is stable. The program is running. The game can begin. Press 1 to continue.");
+  def("a7c300e0-8afe-462f-b1c2-70e9645be4b0", 'robots',
+    "La dernière page : place au jeu réel !",
+    "The final page: time to move on to the real game!");
+  def("4f3a68ab-6306-43f1-85f3-c4108aafbf75", 'exitRoom',
+    "Page de sortie.",
+    "Exit page. If you leave now, you will not restore BridgeBot and the secrets of Mini Bridge. Are you sure you want to stop the adventure? Press 1 to continue playing, or 2 to quit.");
+
+  // rule popups
+  const POPUPS = {
+    "48384966-b026-4cc7-b471-7115ad86ba05": "Règle 5. ",
+    "5770c88c-6dad-443c-bd95-27146b35f58b": "Règle 3. ",
+    "62f493ba-1a5d-41fb-a261-e547ff37db54": "Règle 7. ",
+    "8b023742-f1fb-45e9-98bf-758510772673": "Règle 4. ",
+    "a2ebd7cf-6c3a-4bb9-bc25-2842813e0245": "Règle 6. ",
+    "c54e8840-1afd-4692-99dd-0f7cfcc2ad63": "Règle 1. ",
+    "cb91a57b-9ca4-4182-9eeb-bd7aa6aa7a58": "Règle 2. ",
+    "fa35eda6-2353-47b7-a458-047e5beee455": "Règle 8. "
+  };
+  const POPUP_EN = {
+    "48384966-b026-4cc7-b471-7115ad86ba05": "Rule 5. Careful: playing without wasting does not always mean keeping your big cards for the end! Answer to the exercise: East cannot win, so East plays a small card. South must play the Ace of spades, otherwise West wins with the King of spades.",
+    "5770c88c-6dad-443c-bd95-27146b35f58b": "Rule 3. If you have no card of the requested suit, you discard a card of another suit, but it cannot win the trick. For example, if hearts are requested and you have none, your King of spades cannot win: better to throw a small card like the 2 of clubs.",
+    "62f493ba-1a5d-41fb-a261-e547ff37db54": "Rule 7. Before the game starts, each player counts the points in their hand and adds them to their partner's. There are 40 points in total, shared between the two teams.",
+    "8b023742-f1fb-45e9-98bf-758510772673": "Rule 4. Mini Bridge is a team game: play without wasting! Watch the cards your partner plays. If your partner is going to win the trick, do not waste your biggest card: keep it for later.",
+    "a2ebd7cf-6c3a-4bb9-bc25-2842813e0245": "Rule 6. The lead is the first card played in the game. When it is on the table, the player to the left lays their hand face up and becomes the dummy for the whole game. Their partner decides which cards they play.",
+    "cb91a57b-9ca4-4182-9eeb-bd7aa6aa7a58": "Rule 2. The player who played the strongest card wins the trick, and leads the next one. A trick is the set of 4 cards played, one per player; there are at most 13 tricks in a game. The goal is to win more tricks than your opponents.",
+    "fa35eda6-2353-47b7-a458-047e5beee455": "Rule 8. The team with the most points commits to a contract: a number of tricks to win, chosen with the decision table. 20 to 22 points: 7 tricks. 23 to 24: 8 tricks. 25 to 26: 9 tricks. 27 to 29: 10 tricks. 30 to 32: 11 tricks. 33 to 36: 12 tricks. 37 to 40: 13 tricks."
+  };
+  POPUP_EN["c54e8840-1afd-4692-99dd-0f77dacf96ec"] =
+    "Rule 1. You must follow the suit of the first card played on the table. For example, if a diamond is led, you must play a diamond from your hand if you have one.";
+  for (const [id, label] of Object.entries(POPUPS)) {
+    slides[id] = {
+      fr: { pre: label + "Un écran de protocole s'affiche.", detail: SC.panel.fr },
+      en: { full: POPUP_EN[id] || (label + "A protocol screen appears."), detail: SC.panel.en }
+    };
+  }
+
+  const translate = {
+    "Combien y a-t-il de couleurs dans le jeu de cartes du Mini Bridge ?": "How many suits are there in the Mini Bridge card deck?",
+    "4 couleurs": "4 suits", "5 couleurs": "5 suits", "1 couleur": "1 suit", "2 couleurs": "2 suits",
+    "Quelle est la carte la plus forte dans une couleur ?": "What is the strongest card in a suit?",
+    "l'As": "the Ace", "le 10": "the 10", "le 2": "the 2", "le Roi": "the King",
+    "Qui est le partenaire de Nord ?": "Who is North's partner?",
+    "Est": "East", "Sud": "South", "Ouest": "West", "Nord": "North",
+    "Remplissez les blancs avec les bonnes réponses.": "Fill in the blanks with the right answers.",
+    "équipe": "team", "partenaire": "partner",
+    "À votre avis, qui a gagné la levée ?": "In your opinion, who won the trick?",
+    "défaussez": "discard", "carte": "card", "levée": "trick", "forte": "strong",
+    "rejoue.": "plays again.", "couleur": "suit",
+    "perdre": "lose", "grosse": "big", "gaspiller": "waste", "fin": "end",
+    "gauche": "left", "visible": "face up", "décide": "decides", "entame": "lead", "endormi": "dummy",
+    "Détermine le nombre de points d'honneur de cette main.": "Work out the number of honour points in this hand.",
+    "15 points": "15 points", "14 points": "14 points", "13 points": "13 points", "12 points": "12 points",
+    "Comptez les points de chaque joueur et déterminez l’équipe qui a le plus de points.": "Count each player's points and decide which team has the most points.",
+    "Équipe Est-Ouest": "The East-West team", "Équipe Nord-Sud": "The North-South team",
+    "L'équipe majoritaire en point, va s'engager sur un contrat. Lequel ?": "The team with the most points commits to a contract. Which one?",
+    "20 à 22 points - 7 levées": "20 to 22 points - 7 tricks",
+    "23 à 24 points - 8 levées": "23 to 24 points - 8 tricks",
+    "25 à 26 points - 9 levées": "25 to 26 points - 9 tricks",
+    "27 à 29 points - 10 levées": "27 to 29 points - 10 tricks",
+    "30 à 32 points - 11 levées": "30 to 32 points - 11 tricks",
+    "33 à 36 points - 12 levées": "33 to 36 points - 12 tricks",
+    "l'entameur": "the leader", "le déclarant": "the declarer",
+    "Bravo !": "Bravo!",
+    "Bravo ! Vous êtes prêt.e.s pour la suite des aventures !": "Bravo! You are ready for the next adventures!",
+    "Attention ! Clique sur l'oeil pour avoir un indice.": "Careful! Click the eye for a hint.",
+    "Attention ! Regarde bien les cartes affichées.": "Careful! Look closely at the displayed cards.",
+    "Attention ! Regarde bien l'image. Quel est le joueur placé en face du joueur Nord ?": "Careful! Look at the picture: which player sits opposite North?",
+    "Attention ! Aide toi des images...": "Careful! Use the pictures to help you...",
+    "Attention ! Regarde bien qui a posé la carte la plus forte.": "Careful! Look at who played the strongest card.",
+    "Attention ! Rappelle toi des règles que l'on a découvert ensemble...": "Careful! Remember the rules we discovered together...",
+    "Non, ce n'est pas le meilleur choix.": "No, that is not the best choice.",
+    "Regarde bien les points donnés à chaque Honneur.": "Look at the points given to each honour.",
+    "Attention ! Nord a 9 pts, Sud 17 pts, Est 5 pts et Ouest 8 pts.": "Careful! North has 9 points, South 17, East 5 and West 8.",
+    "Attention ! Regarde les points de l'équipe majoritaire.": "Careful! Look at the points of the leading team.",
+    "Aidez vous de la valeur des Honneurs et de l'indice.": "Use the honour values and the hint.",
+    "Démarrer": "Start", "Continue": "Continue", "Je continue": "I keep playing", "J'arrête": "I stop"
+  };
+
+  return {
+    title: {
+      fr: "Mission BridgeBot : le protocole Mini Bridge.",
+      en: "BridgeBot Mission: the Mini Bridge protocol."
+    },
+    slides: slides,
+    labels: {},
+    translate: translate
+  };
+})();
